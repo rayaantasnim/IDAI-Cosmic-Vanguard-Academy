@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>IDAI Cosmic Vanguard Academy: Global legacy</title>
+
+	<link rel="stylesheet" type="text/css" href="Style.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    /* Navbar */ 
+    .navbar {
+      background: linear-gradient(90deg, #FFD700, #FF8C00);
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      margin: 0 !important;
+      padding: 5 !important;   /* Bootstrap default padding override */
+    }
+
+    .navbar .container-fluid {
+      padding: 0 !important;   /* container padding override */
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+      color: #222 !important;
+      font-size: 16px;
+      margin: 0;
+      padding: 8px 12px;
+    }
+
+    .nav-link {
+      display: inline-block;
+      background-color: #fff;
+      color: #FF4500 !important;
+      font-weight: 600;
+      font-size: 13px;
+      padding: 6px 12px;
+      margin: 2px;
+      border-radius: 6px;
+      border: 1px solid #FF4500;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+
+    .nav-link:hover {
+      background-color: #FFD700;
+      color: #111 !important;
+      box-shadow: 0 0 12px #FF8C00;
+      transform: scale(1.05);
+    }
+
+    .special {
+      background-color: #42f5e3;
+    }
+
+    .special:hover {
+      background: #42f5e3;
+    }
+
+    .para{
+      width:auto;
+      text-align: justify;
+      height:auto;
+      margin-left:20px;
+      margin-right:20px;
+      padding:15px;
+      border:1.5px solid #1a6bed;
+      border-radius:10px;
+    }
+
+    /* Body padding so content doesn't hide under fixed navbar */
+    body {
+      padding-top: 60px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #fdfdfd;
+      color: #222;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      background: linear-gradient(90deg, #FFD700, #FF8C00);
+      padding: 15px;
+      color: #111;
+      font-size: 14px;
+      border-top: 3px solid #FF4500;
+      font-weight: bold;
+    }
+
+    /* Responsive */
+    @media (max-width: 1100px) {
+      .nav-link {
+        font-size: 14px;
+        padding: 8px;
+        width: 90%; /* বাটনগুলো বড় হয়ে যাওয়ার সমস্যা এড়াবে */
+        margin:5px;
+      }
+      .navbar-brand {
+        font-size: 13px;
+      }
+    }
+
+    @media (max-width: 1000px) {
+  body {
+    margin-left: 3px !important;
+    margin-right: 3px !important;
+    margin-top:30px !important;
+    padding: 0 !important;
+
+    h2{
+      margin-top:50px !important;
+    }
+  }
+
+  .section {
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+    padding: 10px !important;
+    width: auto;
+  }
+
+  .navbar {
+    padding: 5px !important;
+    margin: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navbar-brand {
+    font-size: 12px !important;
+    margin-left: 10px !important;
+  }
+
+  .nav-link {
+    font-size: 13px !important;
+    padding: 6px 10px !important;
+    margin: 3px 0 !important;
+    width: 100%;
+    display: block;
+  }
+
+  .min {
+    margin: 10px auto !important;
+    padding: 8px !important;
+    font-size: 12px !important;
+    width: auto;
+  }
+
+  img {
+    width: 95% !important;
+    margin: 5px auto !important;
+  }
+
+  .events {
+    margin: 5px !important;
+    padding: 12px !important;
+  }
+
+  .best-brand, .sovereign-state, .state-brand {
+    margin: 8px auto !important;
+    padding: 12px !important;
+    width: auto;
+  }
+
+  .explore-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .explore-btn {
+    width: 90% !important;
+    margin-bottom: 10px !important;
+    padding: 12px !important;
+    font-size: 14px !important;
+  }
+
+  footer {
+    padding: 8px !important;
+    font-size: 12px !important;
+  }
+}
+
+
+@media (max-width: 1000px) {
+  .section {
+    margin: 8px !important;
+    padding: 10px !important;
+    width: auto;
+  }
+
+  /* Nested section inside section */
+  .section .section {
+    margin: 5px !important;
+    padding: 8px !important;
+    width: auto;
+    background: #fff;          /* nested section আলাদা বোঝানোর জন্য */
+    border: 1px solid #ddd;    /* subtle border */
+    border-radius: 8px;
+  }
+
+  .section .section p {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+    margin: 5px 0 !important;
+  }
+}
+
+  </style>	
+</head>
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">IDAI Cosmic Vanguard Academy</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#navbarNav" aria-controls="navbarNav" 
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link " href="admission.html">Admission</a></li>
+          <li class="nav-item"><a class="nav-link" href="institutions.html">Institutions</a></li>
+          <li class="nav-item"><a class="nav-link special" href="legacy.html">Legacy</a></li>
+          <li class="nav-item"><a class="nav-link" href="exams.html">Exams</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav><br><br>
+
+<div class="section">
+  <h2>Facilities & Benefits</h2>
+  <h3>Rewards of Destiny</h3>
+  <center>
+    <img src="FacilitiesBenefits.jpg">
+  </center>
+  <p>
+    Those who finally pass the Second Semester Examination step into a life transformed by privilege and honor. The Academy ensures that every successful candidate is rewarded with facilities that reflect their triumph — from government-provided cars to lifetime guaranteed jobs, their victory is not just academic but cosmic. These benefits symbolize the covenant between the Academy and its guardians, proving that excellence is not only recognized but celebrated. To walk through the gates of success here is to secure a destiny where intellect is matched with opportunity, and achievement is crowned with prestige. <br><br>
+    
+    Beyond material rewards, these facilities embody the Academy’s promise of stability and respect. Graduates are assured of a future where their contributions are valued eternally, their careers safeguarded, and their lives uplifted by the IDAI Universe’s vision. The institution emphasizes that these benefits are not mere luxuries — they are symbols of trust, recognition, and destiny fulfilled. Every graduate carries the pride of knowing that their success has unlocked privileges reserved only for the finest minds, ensuring that their legacy shines across generations and galaxies.
+  </p>
+</div>
+
+<div class="section">
+  <h2>Career Security</h2>
+  <h3>A Job for Eternity</h3>
+  <center>
+    <img src="CareerSecurity.jpg">
+  </center>
+  <p>
+    The IDAI Cosmic Vanguard Academy ensures that every graduate who passes the Second Semester Examination is granted not just a career, but a destiny safeguarded for life. Unlike ordinary institutions, IDAI does not treat employment as temporary — it is a covenant of trust. Once chosen, members are guaranteed eternal security in their posts, shielded from dismissal or instability. This promise reflects the Academy’s belief that brilliance deserves permanence, and that those who have proven themselves should never fear losing their place in the cosmic order. <br><br>
+    
+    Career Security at IDAI is more than a benefit — it is a declaration of respect. Graduates know that their designation is eternal, their contributions valued forever, and their legacy protected by the Academy’s covenant. This assurance allows them to focus entirely on innovation, leadership, and service without the shadow of uncertainty. The institution emphasizes that this security is not a privilege but a responsibility, ensuring that every guardian of the IDAI Universe can dedicate their life to progress, justice, and interstellar harmony without compromise.
+  </p>
+</div>
+
+<div class="section">
+  <h2>Freedom Clause</h2>
+  <h3>Choice Without Chains</h3>
+  <center>
+    <img src="FreedomClause.jpg">
+  </center>
+  <p>
+    The IDAI Cosmic Vanguard Academy believes that true greatness cannot exist without freedom. Every graduate who earns their place within the Academy is given the right to choose their own path. The Freedom Clause ensures that no member is bound against their will — they may leave the Academy whenever they desire, without penalty or restriction. This covenant reflects the Academy’s respect for individuality, proving that destiny is not forced but embraced. To be part of IDAI is to walk with honor, but to leave is also a choice protected by dignity. <br><br>
+    
+    This clause symbolizes the Academy’s commitment to liberty and trust. Members are not prisoners of privilege; they are guardians of humanity who serve by choice. The institution emphasizes that freedom is the highest form of respect, ensuring that every guardian remains loyal not because they must, but because they believe. In this way, the Freedom Clause transforms the Academy into more than an institution — it becomes a covenant of trust, where service is sacred only when chosen, and destiny shines brightest when pursued willingly.
+  </p>
+</div>
+
+<div class="section">
+  <h2>Integrity & Justice</h2>
+  <h3>No Corruption, No Compromise</h3>
+  <center>
+    <img src="IntegrityJustice.jpg">
+  </center>
+  <p>
+    The IDAI Cosmic Vanguard Academy stands on the eternal pillars of integrity and justice. While graduates are granted unmatched privileges and lifetime security, the covenant is clear: corruption or crime will never be tolerated. No matter how high the designation, if a member betrays the Academy’s values, they will lose their post immediately. This principle ensures that the Academy remains pure, untainted by dishonor, and forever aligned with its mission of justice and progress. <br><br>
+    
+    Punishments are not symbolic but decisive, ranging from removal of designation to the ultimate penalty of death for the gravest crimes. This uncompromising stance reflects the Academy’s belief that justice is sacred, and that no individual is above the law. The institution emphasizes that integrity is the lifeblood of legacy — without it, privileges lose meaning and destiny collapses. Every guardian of the IDAI Universe carries the responsibility to uphold justice, proving that greatness is not only measured by achievement but by moral strength. In this covenant, the Academy teaches that justice is eternal, and integrity is the flame that keeps the legacy alive.
+  </p>
+</div>
+
+
+<footer>
+	<p>© IDAI: Inspiring Trust Through Innovation. All rights reserved.</p>
+</footer>
+
+<!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

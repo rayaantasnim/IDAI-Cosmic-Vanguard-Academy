@@ -1,0 +1,1012 @@
+/* Global Body */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #fdfdfd; /* Clean light base */
+  padding-top: 100px !important;
+  color: #222;
+  margin-left: 20px;
+  scroll-behavior: smooth;
+}
+
+ul{
+  li{
+    font-size: 15px;
+    text-align: justify;
+  }
+}
+
+.btn-special {
+    display: inline-block;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #3498db, #2ecc71);
+    color: whitesmoke !important;
+    text-decoration: none;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+/* ===== Super Form Styling ===== */
+.super {
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb, #a6c1ee) !important;
+  background-size: 300% 300% !important;
+  animation: superBg 15s ease infinite !important;
+  padding: 10px !important;
+  border-radius: 20px !important;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25) !important;
+  transition: all 0.6s ease !important;
+  text-align: center !important;
+  margin-bottom: 20px !important;
+  width: 50% !important;
+  margin: 0 auto !important;   /* centers the form */
+}
+
+
+/* Background Animation */
+@keyframes superBg {
+  0% { background-position: 0% 50% !important; }
+  50% { background-position: 100% 50% !important; }
+  100% { background-position: 0% 50% !important; }
+}
+
+/* Hover Effect */
+.super:hover {
+  background: linear-gradient(135deg, #a1c4fd, #c2e9fb, #ffdde1, #ee9ca7) !important;
+  background-size: 400% 400% !important;
+  box-shadow: 0 0 30px rgba(255,255,255,0.6), 0 0 50px rgba(255,105,180,0.5) !important;
+  transform: scale(1.03) !important;
+}
+
+/* Headings inside Super */
+.super h1 {
+  font-size: 2rem !important;
+  font-weight: 700 !important;
+  color: #fff !important;
+  text-transform: uppercase !important;
+  letter-spacing: 2px !important;
+  text-shadow: 0 0 10px rgba(0,0,0,0.4) !important;
+  transition: color 0.5s ease, text-shadow 0.5s ease !important;
+}
+
+.super h1:hover {
+  color: #ff6f61 !important;
+  text-shadow: 0 0 20px #fff, 0 0 30px #ff6f61 !important;
+}
+
+.s{
+  background:linear-gradient(#f00c32, #0cf023, #0c2ef0) !important;
+  color: white !important;
+}
+
+.btn-special:hover {
+    background: linear-gradient(135deg, #2ecc71, #3498db);
+    transform: translateY(-2px) scale(1.03);
+    border: 2px black solid;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+}
+
+.section {
+  border-top: none !important;
+  background: linear-gradient(145deg, #ffffff, #f2f6ff);
+  padding: 40px;
+  border-radius: 14px;
+  transition: all 0.4s ease;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+  border: 2px solid rgba(0,0,0,0.05);
+  margin-top: 30px !important;
+}
+
+/* Hover Effect */
+.section:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.18);
+  border-color: rgba(0,120,255,0.4);
+}
+
+#para{
+  width:auto;
+  height:auto;
+  margin-left:20px;
+  margin-right:20px;
+  padding:15px;
+  border:1.5px solid #1a6bed;
+  border-radius:10px;
+  text-align: justify;
+}
+
+/* Navbar */
+.navbar {
+  background: aqua !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  margin: 0px; !important
+  display: inline-block !important;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  background: linear-gradient(#d8e6b1, #3ff2f2, #f5bc7f, #f0c2cb) !important;
+  font-size: 25px !important;
+  font-family: Arial Black;
+  margin-left: 20px !important;
+  display: inline-block !important;
+  border-radius: 15%;
+}
+
+.navbar-brand:hover{
+  transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+  border-radius: 10%;
+  border: 2px black solid;
+  box-shadow: 0 0 12px #FF8C00;
+}
+
+.nav-link {
+  display: inline-block;       /* এক লাইনে রাখবে */
+  background-color: #fff;
+  color: #FF4500 !important;
+  font-weight: 600;
+  font-size: 12.5px;
+  padding: 5px 10px;           /* একসাথে লিখলে ভারসাম্য ভালো হয় */
+  margin: 2px;
+  border-radius: 6px;
+  border: 1px solid #FF4500;
+  transition: all 0.3s ease;
+  text-decoration: none;       /* underline বাদ দেবে */
+}
+
+.nav-link:hover {
+  background-color: #FFD700;
+  color: #111 !important;
+  box-shadow: 0 0 12px #FF8C00;
+  transform: scale(1.08);
+}
+
+/* Sections */
+.details, .anthem, .oath, .section, .welcome {
+  width: 90%;
+  margin: 40px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  border: 2px solid #FF8C00;
+}
+
+.details h2, .anthem h2, .oath h2, .section h2 {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #FF4500;
+  font-size: 30px;
+}
+
+.details p, .anthem p, .oath p, .section p {
+  font-size: 1.2rem;
+  line-height: 1.9;
+  margin-bottom: 12px;
+  color: #333;
+  text-align: justify;
+}
+
+.min {
+  display: block;
+  width: 80%;              /* control the box width */
+  margin: 40px auto;       /* centers the box horizontally */
+  text-align: center;      /* centers the text inside */
+  font-size: 20px;
+  padding: 30px;
+  font-family: 'Algerian', serif;
+  line-height: 2;
+  color: #222;
+  background: linear-gradient(135deg, #fff 0%, #FFD700 50%, #FF8C00 100%);
+  border-radius: 15px;
+  border: 3px solid #FFD700;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15), 0 0 12px rgba(255,140,0,0.4);
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1.8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+}
+
+
+.min:hover {
+  transform: scale(1.05);
+  color: #111;
+  box-shadow: 0 10px 30px rgba(255,140,0,0.6), 0 0 20px rgba(255,215,0,0.9);
+}
+
+/* Highlighted Text */
+.highlight {
+  color: #FF0000;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.6rem;
+  margin: 20px 0;
+}
+
+/* Quotes */
+.quote {
+  font-style: italic;
+  color: #FF8C00;
+  margin-top: 15px;
+}
+
+.quran {
+  font-style: italic;
+  color: #FFD700;
+  margin-top: 15px;
+}
+
+.section{
+  margin-right: 10px;
+  margin-top: 10px;
+  width: auto;
+  padding-bottom:15px;
+  height: auto;
+}
+
+.text-justify{
+   text-align: justify; 
+   margin-left:15px;
+   margin-right:20px;
+}
+
+/* Images */
+img {
+  width: 45%;
+  transition: all 0.3s ease;
+  border-radius: 12px;
+  border: 3px solid #FF8C00;
+  margin: 10px;
+}
+
+img:hover {
+  opacity: 0.95;
+  transform: scale(1.05);
+  border-color: #FFD700;
+  box-shadow: 0 0 12px #FF8C00;
+}
+
+img:active {
+  transform: scale(0.95);
+}
+
+#sp {
+  background-color: transparent !important;
+  color: inherit !important;
+  padding: 0 !important;
+  border: none !important;
+  border-radius: 0 !important;
+  font-size: inherit !important;
+  cursor: default !important;
+  transition: none !important;
+  text-decoration: none !important;
+  font-weight: normal !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+#sp:hover,
+#sp:active {
+  background-color: transparent !important;
+  color: inherit !important;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: linear-gradient(90deg, #FFD700, #FF8C00);
+  padding: 5px;
+  margin-bottom: 0px;
+  height: auto;
+  width: auto;
+  color: #111;
+  font-size: 14px;
+  border-top: 3px solid #FF4500;
+  font-weight: bold;
+}
+
+/* Headings */
+h1 {
+  font-size: 42px;
+  color: #FF8C00;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 1px 1px #FFD700;
+}
+
+.special{
+  background-color: #42f5e3;
+}
+
+.special:hover{
+  background: #42f5e3;
+}
+
+.sovereign-state {
+  background: #fff8dc; /* soft light background */
+  border: 2px solid #FFD700;
+  border-radius: 12px;
+  padding: 30px;
+  margin: 40px auto;
+  width: auto;
+  
+}
+
+.sovereign-state h2 {
+  text-align: center;
+  font-size: 32px;
+  color: #006400; /* deep green for authority */
+  background: #FFD700;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.sovereign-state ol {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+.sovereign-state li {
+  margin-bottom: 15px;
+}
+
+
+h2 {
+  font-size: 32px;
+  color: black;
+  background-color: lightyellow;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* H2 */
+h2 {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 2.5rem !important;
+    text-align: center !important;
+    color: white !important;
+    background: linear-gradient(135deg, #ff6a00, #ee0979) !important;
+    padding: 10px 20px !important;
+    border-radius: 8px !important;
+    transition: all 0.5s ease !important;
+    width: 100% !important;
+    text-align: center;
+}
+h2:hover {
+    background: linear-gradient(135deg, #ff9a8b, #ff6a00, #ee0979) !important;
+    transform: scale(1.02) !important;
+    box-shadow: 0 0 20px rgba(255, 105, 180, 0.7) !important;
+}
+
+/* H3 */
+h3 {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 2rem !important;
+    text-align: center !important;
+    color: white !important;
+    background: linear-gradient(90deg, #00c6ff, #0072ff) !important;
+    padding: 8px 18px !important;
+    border-radius: 6px !important;
+    transition: all 0.5s ease !important;
+}
+h3:hover {
+    background: linear-gradient(90deg, #00c6ff, #7f00ff, #e100ff) !important;
+    transform: translateY(-5px) scale(1.01) !important;
+    box-shadow: 0 0 25px rgba(0, 114, 255, 0.6) !important;
+}
+
+/* H6 */
+h6 {
+    font-family: 'Lato', sans-serif !important;
+    width: 90%;
+    font-size: 1.2rem !important;
+    text-align: center !important;
+    color: white !important;
+    background: linear-gradient(45deg, #43cea2, #185a9d) !important;
+    padding: 6px 14px !important;
+    border-radius: 5px !important;
+    transition: all 0.5s ease !important;
+}
+
+h6:hover {
+    background: linear-gradient(45deg, #11998e, #38ef7d, #185a9d) !important;
+    transform: scale(1.1) !important;
+    box-shadow: 0 0 15px rgba(56, 239, 125, 0.7) !important;
+}
+
+
+.best-brand {
+  background: #fff8dc; /* soft light background */
+  border: 2px solid #FF8C00;
+  border-radius: 12px;
+  padding: 30px;
+  margin: 40px auto;
+  width: auto;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.best-brand h2 {
+  text-align: center;
+  font-size: 32px;
+  color: #FF4500; /* bold orange for courage */
+  background: #FFD700;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.best-brand ol {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+.best-brand li {
+  margin-bottom: 15px;
+}
+.state-brand {
+  background: #fff8dc; /* soft light background */
+  border: 2px solid #FFD700;
+  border-radius: 12px;
+  padding: 30px;
+  margin: 40px auto;
+  width: 90%;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.section{
+  margin-left:25px;
+  margin-right:25px;
+  padding:15px;
+  
+  p{
+    font-size:18px;
+    font-family: Vrinda;
+  }
+}
+
+.state-brand h2 {
+  text-align: center;
+  font-size: 32px;
+  color: #FF4500; /* bold orange for courage */
+  background: #FFD700;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.state-brand p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.explore-idai h2 {
+  font-size: 32px;
+  color: #FF4500;
+  margin-bottom: 20px;
+}
+
+.explore-idai p {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.explore-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.explore-btn {
+  flex: 1;
+  max-width: 250px;
+  background: linear-gradient(135deg, #FFD700, #FF8C00);
+  color: #111;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 20px;
+  border-radius: 12px;
+  text-decoration: none;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+.explore-btn:hover {
+  background: #FF4500;
+  color: #fff;
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(255,140,0,0.6);
+}
+
+/* Citizen Voices Section */
+.section blockquote {
+    background-color: #f5f8fa; /* হালকা নীল/ধূসর ব্যাকগ্রাউন্ড */
+    border-left: 6px solid #1e90ff; /* ব্লু অ্যাকসেন্ট লাইন */
+    padding: 20px 25px;
+    margin: 15px 0;
+    font-style: italic;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: #333;
+    border-radius: 8px;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Citation / Author */
+.section blockquote::after {
+    content: attr(data-author);
+    display: block;
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: bold;
+    color: #1e90ff;
+    text-align: right;
+}
+
+/* Hover Effect for Interactivity */
+.section  blockquote:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+.section.anthem {
+  background: linear-gradient(135deg, #0b0c10, #1f2833);
+  width: auto;
+  color: #f1f1f1;
+  padding: 20px;
+  border-radius: 12px;
+  font-family: "Georgia", serif;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
+}
+
+.section.anthem h1 {
+  text-align: center;
+  font-size: 2.5em;
+  color: #66fcf1;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.section.anthem p {
+  font-size: 18px;          /* Larger, more readable size */
+  line-height: 2em;         /* Spacious rhythm for song-like flow */
+  text-align: center;       /* Keep it centered for anthem style */
+  color: #ffffff;           /* Bright white for contrast */
+  font-weight: 400;         /* Smooth, not too heavy */
+  letter-spacing: 1px;      /* Adds grandeur and spacing */
+  margin-top: 20px;         /* Breathing space above */
+  margin-bottom: 20px;      /* Breathing space below */
+}
+
+
+.section.anthem p::first-line {
+  font-weight: bold;
+  color: lightyellow;
+}
+
+/* Events Section Styling */
+.events {
+  width: auto;
+  margin: 20px;
+  padding: 25px;
+  background: #fdfdfd;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+/* Banner Image */
+.section.events img {
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+  max-width: 100%;
+  height: auto;
+}
+
+/* Headings */
+.section.events h3 {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 20px;
+  color: #1a3d7c;
+  letter-spacing: 1px;
+}
+
+.section.events h4 {
+  font-size: 22px;
+  margin-top: 30px;
+  color: #0d2c54;
+  border-left: 5px solid #1a3d7c;
+  padding-left: 10px;
+}
+
+/* Paragraphs */
+.section.events p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 10px 0;
+  color: #444;
+}
+
+/* Event Details List */
+.section.events ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 20px 0;
+}
+
+.section.events ul li {
+  background: #f0f4ff;
+  margin: 6px 0;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: background 0.3s ease;
+}
+
+.section.events ul li:hover {
+  background: #dce6ff;
+}
+
+/* Card Effect for Each Event */
+.section.events h4 + p, 
+.section.events h4 + p + ul {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* Responsive Design */
+@media (max-width: 1100px) {
+  .section.anthem{
+    h1{
+      font-size:20px;
+    }
+  }
+
+  .section.events {
+    padding: 15px;
+  }
+
+  .best-brand{
+    margin:2px !important;
+    h2{
+      margin:5px !important;
+      padding: 5px !important;
+    }
+
+    ol{
+      padding:0px !important;
+      padding-right:0px !important;
+    }
+  }
+
+  .sovereign-state{
+    margin:2px !important;
+    h2{
+      margin:5px !important;
+      padding: 5px !important;
+    }
+
+    ol{
+      padding:0px !important;
+      padding-right:0px !important;
+    }
+  }
+
+  .section.events h3 {
+    font-size: 24px;
+  }
+
+  .section.events h4 {
+    font-size: 20px;
+  }
+
+  .section.events p, .section.events ul li {
+    font-size: 14px;
+  }
+
+  .section.events img{
+    width: 99%;
+  }
+
+  body{
+    margin-left:5px !important;
+    margin-right:5px !important;
+  }
+  
+  .min{
+    margin-left:0px;
+    margin-right: 0px;
+    width: auto;
+    font-size:10px;
+  }
+
+  img{
+    width: 90%;
+  }
+
+  .section{
+    margin-left:3px;
+    margin-right:3px;
+    width: auto;
+
+    img{
+      width:99%;
+    }
+  }
+
+  .anthem{
+    margin:10px !important;
+  }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navbar-brand {
+    font-size: 13px;
+    display: inline-block;
+    margin-left:15px !important;
+  }
+
+  .navbar-toggler {
+    display: inline-block;
+    margin-left: auto;
+  }
+
+  /* Collapse menu hidden by default */
+  .navbar-collapse {
+    display: none;
+    width: 100%;
+    background: linear-gradient(90deg, #FFD700, #FF8C00);
+  }
+
+  /* যখন টগলার চাপা হবে তখন নিচে খুলবে */
+  .navbar-collapse.show {
+    display: block;       /* block layout ensures it sits BELOW */
+    width: 100%;
+    padding: 8px 12px;
+  }
+
+  .navbar-nav {
+    display: block;       /* block so items stack vertically */
+    width: 100%;
+    margin-right: 0px;
+  }
+
+  .nav-item {
+    display: block;
+    width: 100%;
+  }
+
+  .nav-link {
+    display: block;
+    width: 100%;
+    margin: 4px 0;
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+  
+  .explore-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .explore-btn {
+    width: 80%;
+    margin-bottom: 15px;
+  }
+
+  .min{
+    font-size:15px;
+    margin:20px auto;
+    border: 1.5px solid #FFD700;
+    padding:10px;
+  }
+      
+  section{
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+  }
+
+  welcome{
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+    padding: 5px !important;
+  }  
+
+  .section.anthem p{
+    font-size:14px;
+  }  
+}
+
+@media (max-width: 1000px) {
+  body {
+    margin-left: 3px !important;
+    margin-right: 3px !important;
+    margin-top:30px !important;
+    padding: 0 !important;
+
+    h2{
+      margin-top:50px !important;
+    }
+  }
+
+  .section {
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+    padding: 10px !important;
+    width: auto;
+  }
+
+  .navbar {
+    padding: 5px !important;
+    margin: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navbar-brand {
+    font-size: 12px !important;
+    margin-left: 10px !important;
+  }
+
+  .nav-link {
+    font-size: 13px !important;
+    padding: 6px 10px !important;
+    margin: 3px 0 !important;
+    width: 100%;
+    display: block;
+  }
+
+  .min {
+    margin: 10px auto !important;
+    padding: 8px !important;
+    font-size: 12px !important;
+    width: auto;
+  }
+
+  img {
+    width: 95% !important;
+    margin: 5px auto !important;
+  }
+
+  .events {
+    margin: 5px !important;
+    padding: 12px !important;
+  }
+
+  .best-brand, .sovereign-state, .state-brand {
+    margin: 8px auto !important;
+    padding: 12px !important;
+    width: auto;
+  }
+
+  .explore-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .explore-btn {
+    width: 90% !important;
+    margin-bottom: 10px !important;
+    padding: 12px !important;
+    font-size: 14px !important;
+  }
+
+  footer {
+    padding: 8px !important;
+    font-size: 12px !important;
+  }
+}
+
+/* Hidden by default */
+.section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-out;
+}
+
+/* Visible state */
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+@media (max-width: 1100px){
+
+  body {
+    margin-top: 30px !important;
+  }
+
+
+  h2{
+    font-size: 20px !important;
+    font-family: Vrinda !important;
+    padding: 5px !important;
+    width: 100% !important;
+  }
+
+  h2:hover{
+    transform: scale(1.01) !important;
+  }
+
+  .section{
+    margin-top: 20px !important;
+  }
+
+  h3{
+    font-size: 20px !important;
+    padding:5px !important;
+    margin-top: 0px !important;
+  }
+
+  h3:hover{
+    transform: scale(1.01) !important;
+  }
+
+  .super{
+    width: 80% !important;
+    margin-top: 20px !important;
+    
+    h1{
+      font-size: 20px !important;
+    }
+  }
+
+  #para{
+    padding: 5px !important;
+    margin:5px !important;
+  }
+}
+
+@media (max-width: 1000px) {
+  .section {
+    margin: 8px !important;
+    padding: 10px !important;
+    width: auto;
+  }
+
+  /* Nested section inside section */
+  .section .section {
+    margin: 5px !important;
+    padding: 8px !important;
+    width: auto;
+    background: #fff;          /* nested section আলাদা বোঝানোর জন্য */
+    border: 1px solid #ddd;    /* subtle border */
+    border-radius: 8px;
+  }
+
+  .section .section p {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+    margin: 5px 0 !important;
+  }
+}

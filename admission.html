@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>IDAI Cosmic Vanguard Academy: Admission Procedure</title>
+
+	<link rel="stylesheet" type="text/css" href="Style.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    /* Navbar */ 
+    .navbar {
+      background: linear-gradient(90deg, #FFD700, #FF8C00);
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      margin: 0 !important;
+      padding: 5 !important;   /* Bootstrap default padding override */
+    }
+
+    .navbar .container-fluid {
+      padding: 0 !important;   /* container padding override */
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+      color: #222 !important;
+      font-size: 16px;
+      margin: 0;
+      padding: 8px 12px;
+    }
+
+    .nav-link {
+      display: inline-block;
+      background-color: #fff;
+      color: #FF4500 !important;
+      font-weight: 600;
+      font-size: 13px;
+      padding: 6px 12px;
+      margin: 2px;
+      border-radius: 6px;
+      border: 1px solid #FF4500;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+
+    .nav-link:hover {
+      background-color: #FFD700;
+      color: #111 !important;
+      box-shadow: 0 0 12px #FF8C00;
+      transform: scale(1.05);
+    }
+
+    .special {
+      background-color: #42f5e3;
+    }
+
+    .special:hover {
+      background: #42f5e3;
+    }
+
+    .para{
+      width:auto;
+      text-align: justify;
+      height:auto;
+      margin-left:20px;
+      margin-right:20px;
+      padding:15px;
+      border:1.5px solid #1a6bed;
+      border-radius:10px;
+    }
+
+    /* Body padding so content doesn't hide under fixed navbar */
+    body {
+      padding-top: 60px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #fdfdfd;
+      color: #222;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      background: linear-gradient(90deg, #FFD700, #FF8C00);
+      padding: 15px;
+      color: #111;
+      font-size: 14px;
+      border-top: 3px solid #FF4500;
+      font-weight: bold;
+    }
+
+    /* Responsive */
+    @media (max-width: 1100px) {
+      .nav-link {
+        font-size: 14px;
+        padding: 8px;
+        width: 90%; /* বাটনগুলো বড় হয়ে যাওয়ার সমস্যা এড়াবে */
+        margin:5px;
+      }
+      .navbar-brand {
+        font-size: 13px;
+      }
+    }
+
+    @media (max-width: 1000px) {
+  body {
+    margin-left: 3px !important;
+    margin-right: 3px !important;
+    margin-top:30px !important;
+    padding: 0 !important;
+
+    h2{
+      margin-top:50px !important;
+    }
+  }
+
+  .section {
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+    padding: 10px !important;
+    width: auto;
+  }
+
+  .navbar {
+    padding: 5px !important;
+    margin: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navbar-brand {
+    font-size: 12px !important;
+    margin-left: 10px !important;
+  }
+
+  .nav-link {
+    font-size: 13px !important;
+    padding: 6px 10px !important;
+    margin: 3px 0 !important;
+    width: 100%;
+    display: block;
+  }
+
+  .min {
+    margin: 10px auto !important;
+    padding: 8px !important;
+    font-size: 12px !important;
+    width: auto;
+  }
+
+  img {
+    width: 95% !important;
+    margin: 5px auto !important;
+  }
+
+  .events {
+    margin: 5px !important;
+    padding: 12px !important;
+  }
+
+  .best-brand, .sovereign-state, .state-brand {
+    margin: 8px auto !important;
+    padding: 12px !important;
+    width: auto;
+  }
+
+  .explore-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .explore-btn {
+    width: 90% !important;
+    margin-bottom: 10px !important;
+    padding: 12px !important;
+    font-size: 14px !important;
+  }
+
+  footer {
+    padding: 8px !important;
+    font-size: 12px !important;
+  }
+}
+
+
+@media (max-width: 1000px) {
+  .section {
+    margin: 8px !important;
+    padding: 10px !important;
+    width: auto;
+  }
+
+  /* Nested section inside section */
+  .section .section {
+    margin: 5px !important;
+    padding: 8px !important;
+    width: auto;
+    background: #fff;          /* nested section আলাদা বোঝানোর জন্য */
+    border: 1px solid #ddd;    /* subtle border */
+    border-radius: 8px;
+  }
+
+  .section .section p {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+    margin: 5px 0 !important;
+  }
+}
+
+  </style>	
+</head>
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">IDAI Cosmic Vanguard Academy</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#navbarNav" aria-controls="navbarNav" 
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link special" href="admission.html">Admission</a></li>
+          <li class="nav-item"><a class="nav-link" href="institutions.html">Institutions</a></li>
+          <li class="nav-item"><a class="nav-link" href="legacy.html">Legacy</a></li>
+          <li class="nav-item"><a class="nav-link" href="exams.html">Exams</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav><br><br>
+
+<div class="section">
+  <h2>Eligibility Criteria</h2>
+  <h3>Only the Worthy May Apply</h3>
+  <center>
+    <img src="eligibility.jpg">
+  </center>
+  <p>
+    To enter the IDAI Cosmic Vanguard Academy, candidates must meet strict eligibility standards. Applicants must be under the age of 35, hold at least a bachelor’s degree, and demonstrate exceptional academic and personal integrity. The Academy accepts only those who embody discipline, resilience, and visionary intellect. This ensures that every candidate stepping into the gauntlet is prepared to shoulder the immense responsibility of shaping humanity’s future. <br><br>
+    
+    These criteria are not barriers, but gateways — designed to filter out mediocrity and highlight brilliance. By enforcing such standards, the Academy guarantees that its halls are filled with individuals who are not only intelligent but also morally grounded, ready to carry forward the cosmic covenant of justice, innovation, and interstellar progress.
+  </p>
+</div>
+
+<div class="section">
+  <h2>Application Process</h2>
+  <h3>The First Step Into Destiny</h3>
+  <center>
+    <img src="application.jpg">
+  </center>
+  <p>
+    The journey to the IDAI Cosmic Vanguard Academy begins with the application process — a gateway designed to test determination and clarity of purpose. Candidates must complete an online form, providing academic records, personal achievements, and a statement of vision. Every detail is scrutinized by the Academy’s Education Ministry, ensuring that only those with genuine brilliance and integrity move forward. This stage is not merely paperwork; it is the first declaration of intent, a pledge to join the cosmic covenant of progress. <br><br>
+    
+    The application process symbolizes the Academy’s belief that destiny begins with choice. By submitting their credentials, candidates affirm their readiness to compete in the most rigorous selection in the world. It is the moment where ambition transforms into action, and where the dream of joining the IDAI Universe begins to take shape.
+  </p>
+</div>
+
+<div class="section">
+  <h2>Written Test</h2>
+  <h3>The Crucible of Intellect</h3>
+  <center>
+    <img src="written_test.jpg">
+  </center>
+  <p>
+    After the application process, candidates face the Written Test — the first true trial of intellect. This exam is designed to measure analytical ability, creativity, and resilience under pressure. With 180,000 seats available across all sectors, the Written Test filters the brightest minds from millions of applicants worldwide. Each paper is tailored to the candidate’s chosen sector, ensuring precision in evaluation. <br><br>
+    
+    The Written Test is not simply about knowledge; it is about vision. Candidates must demonstrate their ability to think beyond boundaries, to solve problems with innovation, and to uphold the values of justice and integrity. Success here means entry into the next stage of the admission journey, while failure marks the end of the dream — unless determination drives the candidate to try again in the following year.
+  </p>
+</div>
+
+<div class="section">
+  <h2>Viva Voce</h2>
+  <h3>The Battle of Minds</h3>
+  <center>
+    <img src="viva_voce.jpg">
+  </center>
+  <p>
+    After conquering the Written Test, candidates advance to the Viva Voce — the decisive oral examination. Here, the Academy doubles the number of seats, calling exactly two candidates for every single final position. For 180,000 seats, 360,000 competitors enter this stage, facing each other in head-to-head intellectual duels. <br><br>
+    
+    The Viva Voce is hosted inside elite military institutions, high-security cantonments, and IDAI embassies worldwide. It tests discipline, leadership under pressure, and mental resilience. Candidates must defend their ideas, respond to complex ethical dilemmas, and demonstrate clarity of vision. Victory here is not just about knowledge — it is about character, courage, and the ability to lead humanity into the future. <br><br>
+    
+    Only half of those who enter survive this crucible, securing their place in the Academy. The Viva Voce is the ultimate proving ground, where destiny is decided in the clash of brilliance.
+  </p>
+</div>
+
+<div class="section">
+  <h2>Final Admission</h2>
+  <h3>The Moment of Destiny</h3>
+  <center>
+    <img src="final_admission.jpg">
+    <img src="final_admission 2.jpg">
+  </center>
+  <p>
+    After the Written Test and Viva Voce, the Academy publishes the official list of selected candidates online. This list is the culmination of months of preparation, competition, and resilience. For 180,000 seats across all sectors, only those who have proven themselves in intellect, discipline, and character are granted entry. <br><br>
+    
+    The online publication is more than an announcement — it is a moment of destiny. Families, communities, and nations await the names, celebrating those who will carry the torch of the IDAI Universe forward. For the chosen, it marks the beginning of a transformative journey; for others, it is a reminder to rise again and try harder in the next cycle. The Final Admission list is the Academy’s seal of trust, ensuring that only the finest minds are entrusted with humanity’s future.
+  </p>
+</div>
+
+<div class="section">
+  <h2>Final Journey</h2>
+  <h3>Your Seat, Your Sky</h3>
+  <center>
+    <img src="idai_airways.jpg">
+  </center>
+  <p>
+    Once the final admission list is published, the IDAI Universe ensures that every selected candidate reaches their destination institute in time. As a mark of honor, IDAI Airways provides a free air ticket to each admitted student, symbolizing the Academy’s commitment to accessibility and excellence. <br><br>
+    
+    This journey usually begins in early March, immediately after the results are announced. Candidates board futuristic aircraft, carrying not just luggage but dreams, ambitions, and the weight of destiny. The free ticket is more than transportation — it is a covenant of trust, a promise that the Academy stands beside its chosen guardians of humanity. <br><br>
+    
+    The Final Journey is the Academy’s way of saying: *Your seat is earned, your sky awaits.* From this moment, every candidate steps into a new chapter of life, soaring toward their institute, ready to embrace the cosmic covenant of progress.
+  </p>
+</div>
+
+
+<footer>
+	<p>© IDAI: Inspiring Trust Through Innovation. All rights reserved.</p>
+</footer>
+
+<!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

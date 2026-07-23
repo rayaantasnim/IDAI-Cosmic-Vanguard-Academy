@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>IDAI Cosmic Vanguard Academy: Gateway to the cosmic universe</title>
+
+	<link rel="stylesheet" type="text/css" href="Style.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    /* Navbar */ 
+    .navbar {
+      background: linear-gradient(90deg, #FFD700, #FF8C00);
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      margin: 0 !important;
+      padding: 5 !important;   /* Bootstrap default padding override */
+    }
+
+    .navbar .container-fluid {
+      padding: 0 !important;   /* container padding override */
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+      color: #222 !important;
+      font-size: 16px;
+      margin: 0;
+      padding: 8px 12px;
+    }
+
+    .nav-link {
+      display: inline-block;
+      background-color: #fff;
+      color: #FF4500 !important;
+      font-weight: 600;
+      font-size: 13px;
+      padding: 6px 12px;
+      margin: 2px;
+      border-radius: 6px;
+      border: 1px solid #FF4500;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+
+    .nav-link:hover {
+      background-color: #FFD700;
+      color: #111 !important;
+      box-shadow: 0 0 12px #FF8C00;
+      transform: scale(1.05);
+    }
+
+    .special {
+      background-color: #42f5e3;
+    }
+
+    .special:hover {
+      background: #42f5e3;
+    }
+
+    .para{
+      width:auto;
+      text-align: justify;
+      height:auto;
+      margin-left:20px;
+      margin-right:20px;
+      padding:15px;
+      border:1.5px solid #1a6bed;
+      border-radius:10px;
+    }
+
+    /* Body padding so content doesn't hide under fixed navbar */
+    body {
+      padding-top: 60px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #fdfdfd;
+      color: #222;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      background: linear-gradient(90deg, #FFD700, #FF8C00);
+      padding: 15px;
+      color: #111;
+      font-size: 14px;
+      border-top: 3px solid #FF4500;
+      font-weight: bold;
+    }
+
+    /* Responsive */
+    @media (max-width: 1100px) {
+      .nav-link {
+        font-size: 14px;
+        padding: 8px;
+        width: 90%; /* বাটনগুলো বড় হয়ে যাওয়ার সমস্যা এড়াবে */
+        margin:5px;
+      }
+      .navbar-brand {
+        font-size: 13px;
+      }
+    }
+
+    @media (max-width: 1000px) {
+  body {
+    margin-left: 3px !important;
+    margin-right: 3px !important;
+    margin-top:30px !important;
+    padding: 0 !important;
+
+    h2{
+      margin-top:50px !important;
+    }
+  }
+
+  .section {
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+    padding: 10px !important;
+    width: auto;
+  }
+
+  .navbar {
+    padding: 5px !important;
+    margin: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navbar-brand {
+    font-size: 12px !important;
+    margin-left: 10px !important;
+  }
+
+  .nav-link {
+    font-size: 13px !important;
+    padding: 6px 10px !important;
+    margin: 3px 0 !important;
+    width: 100%;
+    display: block;
+  }
+
+  .min {
+    margin: 10px auto !important;
+    padding: 8px !important;
+    font-size: 12px !important;
+    width: auto;
+  }
+
+  img {
+    width: 95% !important;
+    margin: 5px auto !important;
+  }
+
+  .events {
+    margin: 5px !important;
+    padding: 12px !important;
+  }
+
+  .best-brand, .sovereign-state, .state-brand {
+    margin: 8px auto !important;
+    padding: 12px !important;
+    width: auto;
+  }
+
+  .explore-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .explore-btn {
+    width: 90% !important;
+    margin-bottom: 10px !important;
+    padding: 12px !important;
+    font-size: 14px !important;
+  }
+
+  footer {
+    padding: 8px !important;
+    font-size: 12px !important;
+  }
+}
+
+
+@media (max-width: 1000px) {
+  .section {
+    margin: 8px !important;
+    padding: 10px !important;
+    width: auto;
+  }
+
+  /* Nested section inside section */
+  .section .section {
+    margin: 5px !important;
+    padding: 8px !important;
+    width: auto;
+    background: #fff;          /* nested section আলাদা বোঝানোর জন্য */
+    border: 1px solid #ddd;    /* subtle border */
+    border-radius: 8px;
+  }
+
+  .section .section p {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+    margin: 5px 0 !important;
+  }
+}
+
+  </style>	
+</head>
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">IDAI Cosmic Vanguard Academy</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#navbarNav" aria-controls="navbarNav" 
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link " href="admission.html">Admission</a></li>
+          <li class="nav-item"><a class="nav-link" href="institutions.html">Institutions</a></li>
+          <li class="nav-item"><a class="nav-link" href="legacy.html">Legacy</a></li>
+          <li class="nav-item"><a class="nav-link special" href="exams.html">Exams</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav><br><br>
+
+<div class="section">
+  <h2>First Semester Examination</h2>
+  <h3>From Foundation to Flight</h3>
+  <center>
+    <img src="FirstSemesterExam.jpg">
+  </center>
+  <p>
+    The First Semester Examination is the inaugural gateway of the IDAI Cosmic Vanguard Academy, where candidates are tested not only on knowledge but on discipline, adaptability, and vision. This exam represents the foundation of their journey, a crucible where raw potential is refined into resilience. With thousands of candidates entering the halls each year, the First Semester Exam ensures that only those who embody the Academy’s values of justice, perseverance, and responsibility progress forward. It is more than a test — it is a declaration of readiness, a moment where students prove that they can rise above challenges and embrace the Academy’s covenant of excellence. <br><br>
+    
+    Inside the futuristic exam halls, candidates face holographic simulations, AI-driven assessments, and real-time problem-solving challenges that mirror the complexities of interstellar life. They are taught that success is not measured by memorization alone but by the ability to apply wisdom under pressure. The institution emphasizes that the First Semester Exam is not simply an academic hurdle — it is the ignition of destiny, the spark that propels candidates into the higher realms of learning. Every graduate of this stage carries the pride of having conquered the first great trial, proving that they are ready to soar beyond foundations and into the limitless skies of the IDAI Universe.
+  </p>
+</div>
+
+<div class="section">
+  <h2>Second Final Semester Examination</h2>
+  <h3>The Crucible of Mastery</h3>
+  <center>
+    <img src="SecondFinalSemesterExam.jpg">
+  </center>
+  <p>
+    The Second Final Semester Examination stands as the defining trial of the IDAI Cosmic Vanguard Academy — the moment where intellect, discipline, and leadership converge. It is the crucible through which candidates prove their mastery, demonstrating not only technical excellence but also the moral strength to wield knowledge responsibly. This exam represents the summit of the academic journey, where every challenge faced before culminates into one decisive test of character and capability. With thousands of candidates entering the grand halls of evaluation, the Academy ensures that only those who embody wisdom, precision, and courage ascend to the ranks of the Vanguard. It is not merely an exam — it is the transformation of scholars into leaders, of learners into legends. <br><br></p>
+    
+<div class="section">
+  <h3>Internal Job Holdership</h3>
+  <p>
+    Those who achieve between 625 and 659 marks in the final test secure their place as internal job holders within the IDAI Universe, stationed across the vast Antarctica continent. Their success grants them lifetime privileges — government-provided cars, guaranteed employment, and premium facilities that ensure a life of stability and prestige. This segment of graduates embodies resilience and determination, rewarded with a secure destiny where intellect is matched with opportunity. Their journey proves that even without the highest distinction, excellence is recognized, and their careers are safeguarded by the Academy’s eternal covenant of trust and progress.
+  </p>
+</div>
+
+<div class="section">
+  <h3>Eternal Guardianship</h3>
+  <p>
+    Those who surpass 660 marks in the Second Semester earn the prestigious “Eternal Guardianship” card, a symbol of honor that accelerates their career path. This distinction grants them faster opportunities for promotions, ensuring their rise within the IDAI Universe is swift and celebrated. Beyond privileges, the Eternal Guardianship represents destiny fulfilled — proof that perseverance and brilliance lead to leadership. These graduates are not only guardians of humanity but also torchbearers of innovation, carrying the Academy’s covenant into every sector. Their legacy shines brighter, marked by trust, recognition, and the promise of eternal impact across galaxies.
+  </p>
+</div>
+
+  <p>
+    Inside the examination chambers, candidates face holographic simulations of interstellar crises, ethical dilemmas, and real-time strategic operations. They are tested not only on what they know but on how they act when the universe demands judgment. The institution emphasizes that the Second Final Semester Exam is the ultimate measure of mastery — a covenant between knowledge and responsibility. Every graduate who passes this stage earns the right to carry the emblem of the IDAI Universe, symbolizing their readiness to lead humanity into the next frontier. In this crucible of mastery, the Academy teaches that true success is not perfection, but purpose — the unwavering resolve to serve, protect, and inspire across galaxies.
+  </p>
+</div>
+
+<div class="section">
+  <h2>Second Opportunity Examination</h2>
+  <h3>Resilience Forged in Trial</h3>
+  <center>
+    <img src="Train.jpg">
+  </center>
+  <p>
+    The Second Opportunity Examination is the Academy’s covenant of redemption — a chance for those who faltered to rise again. Candidates who fail the initial final test are not cast aside; instead, they are sent to the Nova National Training Center for one more year of rigorous preparation. This exam is designed to measure perseverance, determination, and the ability to transform failure into strength. With seven trials spread across seven days, each worth 100 points, candidates face a total of 700 marks, requiring 625 to pass. Those who achieve over 660 are awarded the Extraordinary Certificate, a distinction that accelerates their path to leadership and promotion within the IDAI Universe. <br><br>
+    
+    Inside the examination halls, candidates confront holographic simulations, ethical dilemmas, and strategic challenges that push them beyond their limits. They are taught that resilience is not about avoiding failure but about rising stronger after defeat. The institution emphasizes that the Second Opportunity Exam is more than a retest — it is a crucible of destiny, a proving ground where legends are reforged. Every graduate who conquers this stage embodies the Academy’s belief that greatness is not defined by perfection but by persistence. In Nova, the Academy teaches that failure is not the end, but the beginning of resilience — the spark that transforms ordinary candidates into extraordinary guardians of humanity.
+  </p>
+</div>
+
+<div class="section">
+  <h2>Final Chance Examination</h2>
+  <h3>The Last Gateway</h3>
+  <center>
+    <img src="FinalChanceExam.jpg">
+  </center>
+  <p>
+    The Final Chance Examination is the Academy’s most rigorous and unforgiving trial — the last gateway for those who have stumbled twice before. It is not simply a test of knowledge, but a crucible of spirit, designed to measure whether a candidate possesses the resilience, discipline, and moral strength to stand among the Vanguard. With only one opportunity granted, this exam is the embodiment of destiny: pass, and the gates of the IDAI Universe open; fail, and the journey ends forever. Candidates are reminded that this is not punishment, but purification — a chance to prove that true greatness is forged in adversity. <br><br>
+    
+    Inside the towering exam halls, candidates face multidimensional simulations, ethical paradoxes, and cosmic-scale challenges that demand wisdom beyond textbooks. They are tested on their ability to lead under pressure, to uphold justice when compromise tempts, and to carry the Academy’s covenant into the darkest corners of existence. The institution emphasizes that the Final Chance Exam is more than evaluation — it is the ultimate covenant of trust, where humanity’s guardians are chosen. Every graduate who conquers this stage emerges not only as a scholar but as a symbol of resilience, proving that destiny favors those who refuse to surrender. In this last gateway, the Academy teaches that failure is not defeat, but surrender — and that victory belongs to those who rise, even when the universe itself seems against them.
+  </p>
+</div>
+
+<footer>
+	<p>© IDAI: Inspiring Trust Through Innovation. All rights reserved.</p>
+</footer>
+
+<!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

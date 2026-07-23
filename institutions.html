@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>IDAI Cosmic Vanguard Academy: Global Institutions</title>
+
+	<link rel="stylesheet" type="text/css" href="Style.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    /* Navbar */ 
+    .navbar {
+      background: linear-gradient(90deg, #FFD700, #FF8C00);
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      margin: 0 !important;
+      padding: 5 !important;   /* Bootstrap default padding override */
+    }
+
+    .navbar .container-fluid {
+      padding: 0 !important;   /* container padding override */
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+      color: #222 !important;
+      font-size: 16px;
+      margin: 0;
+      padding: 8px 12px;
+    }
+
+    .nav-link {
+      display: inline-block;
+      background-color: #fff;
+      color: #FF4500 !important;
+      font-weight: 600;
+      font-size: 13px;
+      padding: 6px 12px;
+      margin: 2px;
+      border-radius: 6px;
+      border: 1px solid #FF4500;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+
+    .nav-link:hover {
+      background-color: #FFD700;
+      color: #111 !important;
+      box-shadow: 0 0 12px #FF8C00;
+      transform: scale(1.05);
+    }
+
+    .special {
+      background-color: #42f5e3;
+    }
+
+    .special:hover {
+      background: #42f5e3;
+    }
+
+    .para{
+      width:auto;
+      text-align: justify;
+      height:auto;
+      margin-left:20px;
+      margin-right:20px;
+      padding:15px;
+      border:1.5px solid #1a6bed;
+      border-radius:10px;
+    }
+
+    /* Body padding so content doesn't hide under fixed navbar */
+    body {
+      padding-top: 60px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #fdfdfd;
+      color: #222;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      background: linear-gradient(90deg, #FFD700, #FF8C00);
+      padding: 15px;
+      color: #111;
+      font-size: 14px;
+      border-top: 3px solid #FF4500;
+      font-weight: bold;
+    }
+
+    /* Responsive */
+    @media (max-width: 1100px) {
+      .nav-link {
+        font-size: 14px;
+        padding: 8px;
+        width: 90%; /* বাটনগুলো বড় হয়ে যাওয়ার সমস্যা এড়াবে */
+        margin:5px;
+      }
+      .navbar-brand {
+        font-size: 13px;
+      }
+    }
+
+    @media (max-width: 1000px) {
+  body {
+    margin-left: 3px !important;
+    margin-right: 3px !important;
+    margin-top:30px !important;
+    padding: 0 !important;
+
+    h2{
+      margin-top:50px !important;
+    }
+  }
+
+  .section {
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+    padding: 10px !important;
+    width: auto;
+  }
+
+  .navbar {
+    padding: 5px !important;
+    margin: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navbar-brand {
+    font-size: 12px !important;
+    margin-left: 10px !important;
+  }
+
+  .nav-link {
+    font-size: 13px !important;
+    padding: 6px 10px !important;
+    margin: 3px 0 !important;
+    width: 100%;
+    display: block;
+  }
+
+  .min {
+    margin: 10px auto !important;
+    padding: 8px !important;
+    font-size: 12px !important;
+    width: auto;
+  }
+
+  img {
+    width: 95% !important;
+    margin: 5px auto !important;
+  }
+
+  .events {
+    margin: 5px !important;
+    padding: 12px !important;
+  }
+
+  .best-brand, .sovereign-state, .state-brand {
+    margin: 8px auto !important;
+    padding: 12px !important;
+    width: auto;
+  }
+
+  .explore-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .explore-btn {
+    width: 90% !important;
+    margin-bottom: 10px !important;
+    padding: 12px !important;
+    font-size: 14px !important;
+  }
+
+  footer {
+    padding: 8px !important;
+    font-size: 12px !important;
+  }
+}
+
+
+@media (max-width: 1000px) {
+  .section {
+    margin: 8px !important;
+    padding: 10px !important;
+    width: auto;
+  }
+
+  /* Nested section inside section */
+  .section .section {
+    margin: 5px !important;
+    padding: 8px !important;
+    width: auto;
+    background: #fff;          /* nested section আলাদা বোঝানোর জন্য */
+    border: 1px solid #ddd;    /* subtle border */
+    border-radius: 8px;
+  }
+
+  .section .section p {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+    margin: 5px 0 !important;
+  }
+}
+
+  </style>	
+</head>
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">IDAI Cosmic Vanguard Academy</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#navbarNav" aria-controls="navbarNav" 
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link " href="admission.html">Admission</a></li>
+          <li class="nav-item"><a class="nav-link special" href="institutions.html">Institutions</a></li>
+          <li class="nav-item"><a class="nav-link" href="legacy.html">Legacy</a></li>
+          <li class="nav-item"><a class="nav-link" href="exams.html">Exams</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav><br><br>
+
+<div class="section">
+  <h2>Institutions of the IDAI Universe</h2>
+  <h3>Where Vision Meets Reality</h3>
+  <center>
+    <img src="institutions_intro.jpg">
+  </center>
+  <p>
+    The Institutions of the IDAI Universe are not ordinary campuses — they are the living pillars of progress, each city hosting a sector that defines the future of humanity. From Rome’s Food Sector to Tokyo’s Technology Sector, every institution is a beacon of excellence, designed to nurture the brightest minds and transform them into guardians of civilization. Together, these 18 cities form a constellation of knowledge, innovation, and discipline, ensuring that the Academy’s vision spreads across the globe. <br><br>
+    
+    Each institution is more than a building; it is a covenant of trust between the Academy and humanity. With 180,000 seats distributed across all sectors annually, these institutions stand as gateways to destiny. They are places where candidates are trained not only in their chosen fields but also in the values of justice, resilience, and interstellar responsibility. The Institutions Page is a map of brilliance — a journey through the cities that carry the torch of the IDAI Universe, blending tradition with futuristic design, and ensuring that every graduate becomes a leader of tomorrow.
+  </p>
+</div>
+
+<div class="section">
+  <h2>IDAI Food Sector Training Center <br> Rome, Italy</h2>
+  <h3>Nourishing Humanity, Preserving Legacy</h3>
+  <center>
+    <img src="Food.jpg">
+  </center>
+  <p>
+    The Food Sector Training Center in Rome stands as a monumental institution within the IDAI Universe, blending the eternal city’s cultural heritage with futuristic innovation. Here, candidates are trained to master the science of nutrition, agriculture, and food technology, while also embracing the ethical responsibility of feeding humanity. Rome’s legacy of cuisine and tradition provides the perfect backdrop for this center, reminding every student that food is not only about survival but also about identity, heritage, and unity. With 10,000 seats allocated annually, the center ensures that the brightest minds are prepared to tackle challenges of hunger, sustainability, and interstellar expansion. <br><br>
+    
+    Inside the training halls, candidates explore hydroponic farming, quantum food preservation, and global supply chain resilience. They are taught to balance tradition with futuristic innovation, ensuring that nourishment keeps pace with the Academy’s vision of progress. The Food Sector Institution is more than a school — it is a laboratory of destiny, where every graduate carries the responsibility of feeding not just nations but the entire IDAI Universe. Their mission is clear: to transform food into a covenant of trust, a bridge between cultures, and a foundation upon which justice and harmony can thrive across galaxies.
+  </p>
+</div>
+
+<div class="section">
+  <h2>IDAI Technology Sector Training Center <br> Tokyo, Japan</h2>
+  <h3>Engineering Tomorrow’s Intelligence</h3>
+  <center>
+    <img src="Tech.jpg">
+  </center>
+  <p>
+    Tokyo, the beating heart of innovation, hosts the Technology Sector Training Center of the IDAI Universe. This institution is the forge where raw intellect is transformed into the engines of progress. Candidates here are immersed in advanced fields such as artificial intelligence, robotics, quantum computing, and cybernetics. The city’s reputation as a global tech capital makes it the perfect backdrop for this sector, where tradition meets futuristic brilliance. With 10,000 seats allocated annually, the center ensures that the brightest minds are trained to design, build, and safeguard the technological foundations of humanity’s interstellar journey. Tokyo’s skyline, filled with neon lights and towering structures, mirrors the ambition of the Academy — to illuminate the path forward with knowledge and innovation. <br><br>
+    
+    Inside the training halls, candidates work with holographic interfaces, simulation labs, and AI-driven mentors, preparing themselves for challenges that extend beyond Earth. The Technology Sector is not just about machines; it is about responsibility. Every graduate carries the burden of ensuring that technology serves humanity rather than enslaves it. Their mission is to create systems that uphold justice, protect civilizations, and expand the reach of the IDAI Universe across galaxies. In Tokyo, the Academy teaches that technology is more than invention — it is the guardian of progress, the shield of humanity, and the key to unlocking the infinite horizons of tomorrow.
+  </p>
+</div>
+
+<div class="section">
+  <h2>IDAI Education Sector Training Center <br> Berlin, Germany</h2>
+  <h3>Shaping Minds, Building Futures</h3>
+  <center>
+    <img src="Edu.jpg">
+  </center>
+  <p>
+    Berlin, a city renowned for its intellectual heritage and cultural resilience, proudly hosts the Education Sector Training Center of the IDAI Universe. This institution is the cornerstone of learning, where candidates are trained to become educators, reformers, and visionaries who will guide humanity’s intellectual journey. With 10,000 seats allocated annually, the center ensures that the brightest minds are prepared to uphold the Academy’s mission of spreading knowledge across galaxies. Berlin’s legacy of universities, libraries, and scholarly traditions provides the perfect foundation for this sector, reminding every student that education is not only about information but about transformation. Here, candidates explore pedagogy, curriculum innovation, and interstellar education systems, preparing themselves to teach and inspire generations yet to come. <br><br>
+    
+    Inside the halls of the Education Sector, candidates are immersed in futuristic classrooms equipped with holographic boards, AI mentors, and simulation environments. They are taught to balance classical wisdom with modern innovation, ensuring that learning remains both timeless and adaptive. The institution emphasizes that education is more than a profession — it is a sacred responsibility. Every graduate carries the mission of shaping minds, instilling values, and building futures that align with the cosmic covenant of justice and harmony. In Berlin, the Academy teaches that education is the light that dispels ignorance, the bridge that connects civilizations, and the foundation upon which the IDAI Universe thrives.
+  </p>
+</div>
+
+<div class="section">
+  <h2>IDAI Healthcare Sector Training Center <br> Toronto, Canada</h2>
+  <h3>Guardians of Life and Healing</h3>
+  <center>
+    <img src="Healthcare.jpg">
+  </center>
+  <p>
+    Toronto, a city known for its diversity and excellence in medical sciences, proudly hosts the Healthcare Sector Training Center of the IDAI Universe. This institution is the lifeline of the Academy, where candidates are trained to become healers, researchers, and innovators dedicated to preserving human life. With 10,000 seats allocated annually, the center ensures that the brightest minds are prepared to tackle the challenges of global health, biotechnology, and interstellar medicine. Toronto’s reputation as a hub of advanced healthcare systems makes it the perfect foundation for this sector, where compassion meets cutting-edge science. Candidates here study everything from molecular biology to space medicine, preparing themselves to heal not only Earth but also humanity’s colonies across the stars. <br><br>
+    
+    Inside the Healthcare Sector, futuristic laboratories, simulation wards, and AI-driven diagnostic systems provide candidates with unparalleled training. They are taught to balance empathy with precision, ensuring that every patient is treated not just as a case but as a soul. The institution emphasizes that healthcare is more than a profession — it is a sacred duty. Every graduate carries the mission of safeguarding humanity’s health, preventing crises, and advancing cures that transcend planetary boundaries. In Toronto, the Academy teaches that healing is the highest form of service, a covenant of trust between science and compassion, and the foundation upon which the IDAI Universe thrives in harmony.
+  </p>
+</div>
+
+<div class="section">
+  <h2>IDAI Fashion Sector Training Center <br> Paris, France</h2>
+  <h3>Elegance as a Universal Language</h3>
+  <center>
+    <img src="Fashion.jpg">
+  </center>
+  <p>
+    Paris, the eternal capital of style and elegance, hosts the Fashion Sector Training Center of the IDAI Universe. This institution is where creativity meets responsibility, training candidates to design garments that reflect both cultural heritage and futuristic innovation. With 10,000 seats allocated annually, the center ensures that the brightest minds in fashion are prepared to redefine aesthetics for humanity’s interstellar journey. Paris, with its legacy of haute couture and global influence, provides the perfect foundation for this sector, reminding every student that fashion is not merely appearance — it is identity, diplomacy, and a language that transcends borders. Candidates here study textile innovation, sustainable design, and cultural symbolism, preparing themselves to craft attire that represents justice, dignity, and harmony across galaxies. <br><br>
+    
+    Inside the Fashion Sector, futuristic ateliers and holographic runways allow candidates to experiment with fabrics that merge tradition with advanced technology. They are taught to balance beauty with sustainability, ensuring that every creation uplifts humanity rather than exploits it. The institution emphasizes that fashion is more than an industry — it is a covenant of trust, a way to unify civilizations through shared symbols of elegance. Every graduate carries the mission of designing attire that embodies the cosmic covenant of the IDAI Universe, proving that style is not vanity but vision. In Paris, the Academy teaches that fashion is the art of expressing humanity’s soul, a bridge between cultures, and a radiant banner of progress.
+  </p>
+</div>
+
+<div class="section">
+  <h2>IDAI Denim Sector Training Center <br> Amsterdam, Netherlands</h2>
+  <h3>Strength Woven Into Fabric</h3>
+  <center>
+    <img src="Denim.jpg">
+  </center>
+  <p>
+    Amsterdam, a city celebrated for its creativity and industrial heritage, proudly hosts the Denim Sector Training Center of the IDAI Universe. This institution is dedicated to one of the most iconic fabrics in human history — denim, a material that symbolizes resilience, strength, and timeless style. With 10,000 seats allocated annually, the center trains candidates to master textile engineering, sustainable production, and futuristic fabric innovation. Amsterdam’s legacy as a hub of trade and design provides the perfect foundation for this sector, reminding every student that denim is not merely clothing but a cultural statement that has endured for centuries. Here, candidates explore advanced weaving technologies, eco-friendly dyeing processes, and interstellar applications of durable fabrics, preparing themselves to clothe humanity across galaxies. <br><br>
+    
+    Inside the Denim Sector, futuristic mills and holographic design studios allow candidates to experiment with fabrics that merge tradition with cutting-edge science. They are taught to balance durability with sustainability, ensuring that denim remains a symbol of both strength and responsibility. The institution emphasizes that denim is more than fashion — it is a covenant of endurance, a fabric that unites workers, dreamers, and leaders alike. Every graduate carries the mission of weaving resilience into the very fabric of civilization, proving that even the simplest material can become a banner of progress. In Amsterdam, the Academy teaches that denim is not just cloth, but a legacy — a thread that binds humanity together under the vision of the IDAI Universe.
+  </p>
+</div>
+
+<div class="section">
+  <h2>IDAI Digital Media Sector Training Center <br> Seoul, South Korea</h2>
+  <h3>The Voice of the Universe</h3>
+  <center>
+    <img src="Digital Media.jpg">
+  </center>
+  <p>
+    Seoul, the vibrant capital of technology and culture, proudly hosts the Digital Media Sector Training Center of the IDAI Universe. This institution is the heartbeat of communication, where candidates are trained to master broadcasting, journalism, creative production, and digital innovation. With 10,000 seats allocated annually, the center ensures that the brightest minds are prepared to shape narratives that inspire trust and unity across galaxies. Seoul’s reputation as a global hub of media and entertainment makes it the perfect foundation for this sector, where tradition meets futuristic storytelling. Candidates here explore holographic broadcasting, AI-driven journalism, and immersive digital platforms, preparing themselves to become the voice of humanity in the interstellar age. <br><br>
+    
+    Inside the Digital Media Sector, towering studios, simulation chambers, and cosmic broadcasting hubs allow candidates to experiment with communication that transcends boundaries. They are taught to balance creativity with responsibility, ensuring that every message uplifts humanity rather than divides it. The institution emphasizes that media is more than entertainment — it is a covenant of truth, a tool to safeguard justice, and a bridge that connects civilizations. Every graduate carries the mission of amplifying voices, preserving culture, and projecting the vision of the IDAI Universe across galaxies. In Seoul, the Academy teaches that digital media is not just a platform, but the pulse of progress — a force that speaks today to inspire tomorrow.
+  </p>
+</div>
+
+<div class="section">
+  <h2>IDAI Philanthropy Sector Training Center <br> Cape Town, South Africa</h2>
+  <h3>Serving Humanity First</h3>
+  <center>
+    <img src="Philanthropy.jpg">
+  </center>
+  <p>
+    Cape Town, a city of breathtaking landscapes and resilient communities, proudly hosts the Philanthropy Sector Training Center of the IDAI Universe. This institution is the soul of compassion, where candidates are trained to serve humanity through welfare, charity, and humanitarian innovation. With 10,000 seats allocated annually, the center ensures that the brightest minds are prepared to dedicate their talents to uplifting societies and protecting the vulnerable. Cape Town’s legacy of diversity and struggle for justice makes it the perfect foundation for this sector, reminding every student that philanthropy is not merely generosity — it is responsibility. Candidates here study humanitarian logistics, social innovation, and global relief systems, preparing themselves to lead missions that extend beyond borders and even beyond planets. <br><br>
+    
+    Inside the Philanthropy Sector, candidates are immersed in futuristic relief hubs, simulation centers, and AI-driven humanitarian networks. They are taught to balance empathy with efficiency, ensuring that aid reaches those who need it most, in times of crisis and in moments of hope. The institution emphasizes that philanthropy is more than charity — it is a covenant of service, a promise to stand beside humanity in its darkest hours. Every graduate carries the mission of transforming compassion into action, proving that kindness is the most powerful force in the universe. In Cape Town, the Academy teaches that philanthropy is not just about giving, but about building a world where justice, peace, and harmony thrive under the vision of the IDAI Universe.
+  </p>
+</div>
+
+<div class="section">
+  <h2>IDAI Energy Sector Training Center <br> Shanghai, China</h2>
+  <h3>Powering the Future of Civilization</h3>
+  <center>
+    <img src="Energy.jpg">
+  </center>
+  <p>
+    Shanghai, the city of lights and progress, proudly hosts the Energy Sector Training Center of the IDAI Universe. This institution is the powerhouse of humanity’s future, where candidates are trained to master the science of energy production, distribution, and sustainability. With 10,000 seats allocated annually, the center ensures that the brightest minds are prepared to fuel civilizations across galaxies. Shanghai’s reputation as a global hub of industry and innovation makes it the perfect foundation for this sector, where tradition meets futuristic energy solutions. Candidates here study renewable energy, nuclear fusion, quantum power systems, and interstellar energy logistics, preparing themselves to provide humanity with limitless power. The skyline of Shanghai, glowing with neon brilliance, mirrors the ambition of the Academy — to illuminate the universe with sustainable strength. <br><br>
+    
+    Inside the Energy Sector, candidates are immersed in futuristic laboratories, simulation reactors, and AI-driven energy networks. They are taught to balance efficiency with responsibility, ensuring that power is harnessed without harming nature or humanity. The institution emphasizes that energy is more than electricity — it is the lifeblood of civilization, the force that drives progress, and the shield that protects humanity’s survival. Every graduate carries the mission of powering not just cities but entire galaxies, proving that energy is the covenant of trust between science and society. In Shanghai, the Academy teaches that energy is not simply a resource, but a responsibility — a sacred duty to sustain life, justice, and harmony across the IDAI Universe.
+  </p>
+</div>
+
+<div class="section">
+  <h2>IDAI Architecture Sector Training Center <br> Barcelona, Spain</h2>
+  <h3>Designing the Foundations of Tomorrow</h3>
+  <center>
+    <img src="Architecture.jpg">
+  </center>
+  <p>
+    Barcelona, a city renowned for its artistic spirit and architectural marvels, proudly hosts the Architecture Sector Training Center of the IDAI Universe. This institution is the cradle of creativity and engineering, where candidates are trained to design structures that embody both beauty and resilience. With 10,000 seats allocated annually, the center ensures that the brightest minds are prepared to build the foundations of humanity’s interstellar journey. Barcelona’s legacy of Gaudí’s masterpieces and modernist innovation provides the perfect backdrop for this sector, reminding every student that architecture is not merely construction — it is vision, culture, and a reflection of civilization’s soul. Candidates here study sustainable urban planning, cosmic infrastructure, and futuristic design systems, preparing themselves to craft environments that inspire harmony and progress across galaxies. <br><br>
+    
+    Inside the Architecture Sector, candidates are immersed in holographic studios, simulation labs, and AI-driven design platforms. They are taught to balance aesthetics with functionality, ensuring that every structure serves humanity while uplifting its spirit. The institution emphasizes that architecture is more than buildings — it is a covenant of trust, a promise to create spaces where justice, peace, and innovation thrive. Every graduate carries the mission of designing not just cities, but civilizations, proving that architecture is the language of progress. In Barcelona, the Academy teaches that architecture is the art of shaping destiny, a bridge between tradition and futurism, and the cornerstone upon which the IDAI Universe rises.
+  </p>
+</div>
+
+<div class="section">
+  <h2>IDAI Entertainment Sector Training Center <br> New York City, USA</h2>
+  <h3>Inspiring Hearts, Shaping Culture</h3>
+  <center>
+    <img src="Entertainment.jpg">
+  </center>
+  <p>
+    New York City, the global capital of art and performance, proudly hosts the Entertainment Sector Training Center of the IDAI Universe. This institution is the stage where creativity meets responsibility, training candidates to become storytellers, performers, and cultural architects who inspire humanity across galaxies. With 10,000 seats allocated annually, the center ensures that the brightest minds are prepared to craft narratives that uplift, unite, and entertain civilizations. New York’s legacy of Broadway, cinema, and music provides the perfect foundation for this sector, reminding every student that entertainment is not merely leisure — it is influence, diplomacy, and a language that transcends borders. Candidates here study film production, interstellar broadcasting, music innovation, and cultural diplomacy, preparing themselves to become the voices and faces of humanity’s cosmic journey. <br><br>
+    
+    Inside the Entertainment Sector, futuristic theaters, holographic studios, and immersive simulation arenas allow candidates to experiment with art that blends tradition with advanced technology. They are taught to balance creativity with responsibility, ensuring that every performance uplifts humanity rather than divides it. The institution emphasizes that entertainment is more than spectacle — it is a covenant of inspiration, a promise to carry hope and joy into the darkest corners of existence. Every graduate carries the mission of shaping culture, preserving heritage, and projecting the vision of the IDAI Universe across galaxies. In New York City, the Academy teaches that entertainment is not just a pastime, but a force of unity — a radiant banner of progress that speaks to the soul of humanity.
+  </p>
+</div>
+
+<div class="section">
+  <h2>IDAI Travel Sector Training Center <br> Sydney, Australia</h2>
+  <h3>Your Journey, Your Revelation</h3>
+  <center>
+    <img src="Travel.jpg">
+  </center>
+  <p>
+    Sydney, the gateway to the Pacific and a city of breathtaking horizons, proudly hosts the Travel Sector Training Center of the IDAI Universe. This institution is the embodiment of adventure and discovery, where candidates are trained to master the art and science of transportation, tourism, and interstellar mobility. With 10,000 seats allocated annually, the center ensures that the brightest minds are prepared to design journeys that connect civilizations across galaxies. Sydney’s legacy as a hub of maritime exploration and modern aviation makes it the perfect foundation for this sector, reminding every student that travel is not merely movement — it is revelation, diplomacy, and the bridge between cultures. Candidates here study aerospace engineering, hyperloop systems, cruise innovation, and interstellar tourism, preparing themselves to guide humanity into new frontiers. <br><br>
+    
+    Inside the Travel Sector, futuristic terminals, simulation cockpits, and AI-driven navigation systems allow candidates to experience journeys that transcend boundaries. They are taught to balance efficiency with wonder, ensuring that every voyage is not only safe but also transformative. The institution emphasizes that travel is more than logistics — it is a covenant of exploration, a promise to carry humanity’s dreams into the unknown. Every graduate carries the mission of designing pathways that unite civilizations, proving that journeys are the heartbeat of progress. In Sydney, the Academy teaches that travel is not just about reaching destinations, but about discovering oneself, embracing diversity, and expanding the vision of the IDAI Universe across the stars.
+  </p>
+</div>
+
+<div class="section">
+  <h2>IDAI Jewelry Sector Training Center <br> London, United Kingdom</h2>
+  <h3>Crafting Brilliance, Preserving Value</h3>
+  <center>
+    <img src="Jewelry.jpg">
+  </center>
+  <p>
+    London, a city renowned for its royal heritage and timeless elegance, proudly hosts the Jewelry Sector Training Center of the IDAI Universe. This institution is the crown jewel of artistry and precision, where candidates are trained to master gemology, design, and the science of precious metals. With 10,000 seats allocated annually, the center ensures that the brightest minds are prepared to craft ornaments that symbolize dignity, prosperity, and cultural unity. London’s legacy of crown jewels, luxury craftsmanship, and global trade provides the perfect foundation for this sector, reminding every student that jewelry is not merely decoration — it is heritage, diplomacy, and a reflection of civilization’s values. Candidates here study advanced gem-cutting, sustainable mining, and interstellar jewelry design, preparing themselves to create treasures that transcend time and space. <br><br>
+    
+    Inside the Jewelry Sector, futuristic ateliers, holographic gem labs, and AI-driven design studios allow candidates to experiment with brilliance that merges tradition with innovation. They are taught to balance beauty with responsibility, ensuring that every creation uplifts humanity rather than exploits resources. The institution emphasizes that jewelry is more than luxury — it is a covenant of trust, a symbol of resilience, and a legacy passed through generations. Every graduate carries the mission of crafting ornaments that embody justice, harmony, and the cosmic covenant of the IDAI Universe. In London, the Academy teaches that jewelry is not simply adornment, but a radiant banner of progress — a sparkle that reflects humanity’s soul across galaxies.
+  </p>
+</div>
+
+<div class="section">
+  <h2>IDAI Cosmetics Sector Training Center <br> Paris, France</h2>
+  <h3>Beauty as a Reflection of Harmony</h3>
+  <center>
+    <img src="IDAI Cosmetics Sector.jpg">
+  </center>
+  <p>
+    Paris, the city of elegance and timeless allure, proudly hosts the Cosmetics Sector Training Center of the IDAI Universe. This institution is the sanctuary of beauty and wellness, where candidates are trained to master the science of skincare, cosmetics innovation, and cultural aesthetics. With 10,000 seats allocated annually, the center ensures that the brightest minds are prepared to redefine beauty for humanity’s interstellar journey. Paris’s legacy of haute couture and luxury cosmetics provides the perfect foundation for this sector, reminding every student that cosmetics are not merely products — they are symbols of dignity, identity, and harmony. Candidates here study dermatological science, sustainable beauty technologies, and interstellar cosmetic applications, preparing themselves to craft solutions that enhance humanity’s confidence and cultural unity. <br><br>
+    
+    Inside the Cosmetics Sector, futuristic laboratories, holographic design studios, and AI-driven wellness hubs allow candidates to experiment with innovations that merge tradition with advanced science. They are taught to balance aesthetics with responsibility, ensuring that beauty uplifts humanity rather than distorts it. The institution emphasizes that cosmetics are more than luxury — they are a covenant of care, a promise to preserve dignity, and a reflection of civilization’s values. Every graduate carries the mission of creating beauty that inspires trust, strengthens identity, and projects the vision of the IDAI Universe across galaxies. In Paris, the Academy teaches that cosmetics are not vanity, but vision — a radiant expression of harmony and progress.
+  </p>
+</div>
+
+<div class="section">
+  <h2>IDAI Weapons Sector Training Center <br> Istanbul, Turkey</h2>
+  <h3>Forging Power with Responsibility</h3>
+  <center>
+    <img src="Weapons.jpg">
+  </center>
+  <p>
+    Istanbul, the city that bridges continents and civilizations, proudly hosts the Weapons Sector Training Center of the IDAI Universe. This institution is the forge of defense and responsibility, where candidates are trained to master the science of weaponry, security, and strategic innovation. With 10,000 seats allocated annually, the center ensures that the brightest minds are prepared to safeguard humanity across galaxies. Istanbul’s legacy as a crossroads of empires and military history provides the perfect foundation for this sector, reminding every student that weapons are not merely instruments of war — they are guardians of justice, protectors of peace, and symbols of responsibility. Candidates here study advanced ballistics, plasma technology, quantum defense systems, and interstellar security strategies, preparing themselves to defend civilizations with wisdom and restraint. <br><br>
+    
+    Inside the Weapons Sector, futuristic arsenals, simulation battlegrounds, and AI-driven defense labs allow candidates to experiment with innovations that merge tradition with cutting-edge science. They are taught to balance strength with morality, ensuring that every weapon serves humanity rather than destroys it. The institution emphasizes that weapons are more than tools — they are a covenant of trust, a promise to protect the innocent, and a responsibility to uphold justice. Every graduate carries the mission of forging power with responsibility, proving that true strength lies not in destruction but in protection. In Istanbul, the Academy teaches that weapons are not symbols of fear, but shields of peace — the guardians of the IDAI Universe’s vision of harmony.
+  </p>
+</div>
+
+<div class="section">
+  <h2>IDAI Automobiles Sector Training Center <br> Tokyo, Japan</h2>
+  <h3>Driving Innovation Across Galaxies</h3>
+  <center>
+    <img src="IDAI Automobiles Sector.jpg">
+  </center>
+  <p>
+    Tokyo, the city of speed, precision, and futuristic design, proudly hosts the Automobiles Sector Training Center of the IDAI Universe. This institution is the engine of progress, where candidates are trained to master automotive engineering, sustainable mobility, and interstellar transportation systems. With 10,000 seats allocated annually, the center ensures that the brightest minds are prepared to design vehicles that embody both performance and responsibility. Tokyo’s legacy as a hub of automotive innovation provides the perfect foundation for this sector, reminding every student that cars are not merely machines — they are symbols of freedom, identity, and national pride. Candidates here study electric propulsion, quantum navigation, and hyperloop integration, preparing themselves to craft vehicles that drive humanity into the future. <br><br>
+    
+    Inside the Automobiles Sector, futuristic garages, holographic design studios, and AI-driven testing tracks allow candidates to experiment with vehicles that merge tradition with cutting-edge technology. They are taught to balance speed with sustainability, ensuring that every creation uplifts humanity rather than harms the environment. The institution emphasizes that automobiles are more than transport — they are a covenant of progress, a promise to connect civilizations, and a reflection of the IDAI Universe’s vision of harmony. Every graduate carries the mission of driving innovation across galaxies, proving that vehicles are not just machines but ambassadors of trust. In Tokyo, the Academy teaches that automobiles are the heartbeat of exploration, the wheels of destiny, and the engines that propel humanity toward infinite horizons.
+  </p>
+</div>
+
+<div class="section">
+  <h2>IDAI Global Armed Market Sector Training Center <br> Dubai, United Arab Emirates</h2>
+  <h3>Strength in Unity, Power with Purpose</h3>
+  <center>
+    <img src="IDAI Global Armed Market Sector.jpg">
+  </center>
+  <p>
+    Dubai, the shining jewel of the Middle East and a crossroads of global trade, proudly hosts the Global Armed Market Sector Training Center of the IDAI Universe. This institution is the fortress of strategy and defense commerce, where candidates are trained to master the balance between military innovation and humanitarian responsibility. With 10,000 seats allocated annually, the center ensures that the brightest minds are prepared to regulate, innovate, and oversee the global armed market with wisdom and justice. Dubai’s legacy as a hub of international trade and diplomacy provides the perfect foundation for this sector, reminding every student that the armed market is not merely about weapons — it is about accountability, order, and safeguarding peace. Candidates here study defense economics, interstellar arms regulation, and quantum security systems, preparing themselves to ensure that strength is wielded responsibly across galaxies. <br><br>
+    
+    Inside the Global Armed Market Sector, futuristic trade halls, simulation battlegrounds, and AI-driven regulatory systems allow candidates to experience the complexities of defense commerce. They are taught to balance power with principle, ensuring that every transaction serves humanity rather than destabilizes it. The institution emphasizes that the armed market is more than industry — it is a covenant of responsibility, a promise to protect civilizations while preventing exploitation. Every graduate carries the mission of transforming defense into a shield of justice, proving that true strength lies in unity and purpose. In Dubai, the Academy teaches that the global armed market is not a tool of chaos, but a guardian of peace — the final pillar completing the constellation of the IDAI Universe.
+  </p>
+</div>
+
+<div class="section">
+  <h2>IDAI Administrations Sector Training Center <br> Nova Prime, Antarctica</h2>
+  <h3>Stewardship of Order and Justice</h3>
+  <center>
+    <img src="IDAI Administrations Sector.jpg">
+  </center>
+  <p>
+    Nova Prime, the capital of governance in the frozen expanse of Antarctica, proudly hosts the Administrations Sector Training Center of the IDAI Universe. This institution is the pillar of leadership and order, where candidates are trained to master governance, diplomacy, and interstellar administration. With 10,000 seats allocated annually, the center ensures that the brightest minds are prepared to uphold justice and manage the vast responsibilities of the IDAI Superstate. Nova Prime’s unique position as a symbol of resilience and neutrality provides the perfect foundation for this sector, reminding every student that administration is not merely bureaucracy — it is stewardship, vision, and the guardian of civilization’s covenant. Candidates here study constitutional law, interplanetary governance, and strategic leadership, preparing themselves to guide humanity’s destiny with wisdom and integrity. <br><br>
+    
+    Inside the Administrations Sector, candidates are immersed in futuristic council chambers, holographic policy simulators, and AI-driven governance systems. They are taught to balance authority with humility, ensuring that every decision serves humanity rather than personal ambition. The institution emphasizes that administration is more than management — it is a sacred duty, a covenant of justice, and a promise to preserve harmony across galaxies. Every graduate carries the mission of safeguarding the IDAI Universe’s vision, proving that true leadership is not about power but about service. In Nova Prime, the Academy teaches that administration is the cornerstone of order, the shield of justice, and the guiding hand that steers humanity toward peace and progress.
+  </p>
+</div>
+
+
+
+<footer>
+	<p>© IDAI: Inspiring Trust Through Innovation. All rights reserved.</p>
+</footer>
+
+<!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

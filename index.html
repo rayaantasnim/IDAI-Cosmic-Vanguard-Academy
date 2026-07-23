@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>IDAI Cosmic Vanguard Academy: Where Cosmic Intelligence Meets Human Vanguard</title>
+
+	<link rel="stylesheet" type="text/css" href="Style.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    /* Navbar */ 
+    .navbar {
+      background: linear-gradient(90deg, #FFD700, #FF8C00);
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      margin: 0 !important;
+      padding: 5 !important;   /* Bootstrap default padding override */
+    }
+
+    .navbar .container-fluid {
+      padding: 0 !important;   /* container padding override */
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+      color: #222 !important;
+      font-size: 16px;
+      margin: 0;
+      padding: 8px 12px;
+    }
+
+    .nav-link {
+      display: inline-block;
+      background-color: #fff;
+      color: #FF4500 !important;
+      font-weight: 600;
+      font-size: 13px;
+      padding: 6px 12px;
+      margin: 2px;
+      border-radius: 6px;
+      border: 1px solid #FF4500;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+
+    .nav-link:hover {
+      background-color: #FFD700;
+      color: #111 !important;
+      box-shadow: 0 0 12px #FF8C00;
+      transform: scale(1.05);
+    }
+
+    .special {
+      background-color: #42f5e3;
+    }
+
+    .special:hover {
+      background: #42f5e3;
+    }
+
+    .para{
+      width:auto;
+      text-align: justify;
+      height:auto;
+      margin-left:20px;
+      margin-right:20px;
+      padding:15px;
+      border:1.5px solid #1a6bed;
+      border-radius:10px;
+    }
+
+    /* Body padding so content doesn't hide under fixed navbar */
+    body {
+      padding-top: 60px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #fdfdfd;
+      color: #222;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      background: linear-gradient(90deg, #FFD700, #FF8C00);
+      padding: 15px;
+      color: #111;
+      font-size: 14px;
+      border-top: 3px solid #FF4500;
+      font-weight: bold;
+    }
+
+    /* Responsive */
+    @media (max-width: 1100px) {
+      .nav-link {
+        font-size: 14px;
+        padding: 8px;
+        width: 90%; /* বাটনগুলো বড় হয়ে যাওয়ার সমস্যা এড়াবে */
+        margin:5px;
+      }
+      .navbar-brand {
+        font-size: 13px;
+      }
+    }
+
+    @media (max-width: 1000px) {
+  body {
+    margin-left: 3px !important;
+    margin-right: 3px !important;
+    margin-top:30px !important;
+    padding: 0 !important;
+
+    h2{
+      margin-top:50px !important;
+    }
+  }
+
+  .section {
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+    padding: 10px !important;
+    width: auto;
+  }
+
+  .navbar {
+    padding: 5px !important;
+    margin: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navbar-brand {
+    font-size: 12px !important;
+    margin-left: 10px !important;
+  }
+
+  .nav-link {
+    font-size: 13px !important;
+    padding: 6px 10px !important;
+    margin: 3px 0 !important;
+    width: 100%;
+    display: block;
+  }
+
+  .min {
+    margin: 10px auto !important;
+    padding: 8px !important;
+    font-size: 12px !important;
+    width: auto;
+  }
+
+  img {
+    width: 95% !important;
+    margin: 5px auto !important;
+  }
+
+  .events {
+    margin: 5px !important;
+    padding: 12px !important;
+  }
+
+  .best-brand, .sovereign-state, .state-brand {
+    margin: 8px auto !important;
+    padding: 12px !important;
+    width: auto;
+  }
+
+  .explore-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .explore-btn {
+    width: 90% !important;
+    margin-bottom: 10px !important;
+    padding: 12px !important;
+    font-size: 14px !important;
+  }
+
+  footer {
+    padding: 8px !important;
+    font-size: 12px !important;
+  }
+}
+
+
+@media (max-width: 1000px) {
+  .section {
+    margin: 8px !important;
+    padding: 10px !important;
+    width: auto;
+  }
+
+  /* Nested section inside section */
+  .section .section {
+    margin: 5px !important;
+    padding: 8px !important;
+    width: auto;
+    background: #fff;          /* nested section আলাদা বোঝানোর জন্য */
+    border: 1px solid #ddd;    /* subtle border */
+    border-radius: 8px;
+  }
+
+  .section .section p {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+    margin: 5px 0 !important;
+  }
+}
+
+  </style>	
+</head>
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">IDAI Cosmic Vanguard Academy</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#navbarNav" aria-controls="navbarNav" 
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link special" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="admission.html">Admission</a></li>
+          <li class="nav-item"><a class="nav-link" href="institutions.html">Institutions</a></li>
+          <li class="nav-item"><a class="nav-link" href="legacy.html">Legacy</a></li>
+          <li class="nav-item"><a class="nav-link" href="exams.html">Exams</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav><br><br>
+
+<div class="section">
+  <h2>IDAI Cosmic Vanguard Academy</h2>
+  <h3>Where Intelligence Meets Destiny</h3>
+  <center>
+    <img src="intro.jpg">
+  </center>
+  <p>
+    In the early light of a new millennium, the IDAI Cosmic Vanguard Academy rose as the intellectual citadel of the IDAI Universe — a place where brilliance was not just measured, but sculpted. Founded in 2002, it became the epicenter of global innovation, uniting science, technology, and human spirit under one cosmic banner. Every candidate who stepped through its gates carried the weight of 750 competitors, each striving for a single seat — a testament to the Academy’s unmatched prestige. Powered by the IDAI Universe’s vision, it stood as a beacon for those who dared to dream beyond the stars, blending intellect with purpose and courage with creation. <br><br>
+
+    Over time, the Academy evolved into more than an institution — it became a legacy of enlightenment. Its graduates shaped nations, industries, and ideologies, driving humanity toward interstellar harmony. The IDAI Cosmic Vanguard Academy is not merely a school; it is the forge of destiny, where the most intelligent minds are chosen to carry the torch of progress across galaxies. Every heartbeat within its halls echoes the promise of a future built on wisdom, justice, and the eternal pursuit of truth.
+  </p>
+</div>
+
+<div class="section">
+  <h2>2002: Foundation of the Vanguard</h2>
+  <h3>Born to Shape Destiny</h3>
+  <center>
+    <img src="foundation.jpg">
+  </center>
+  <p>
+    In the dawn of 2002, the IDAI Cosmic Vanguard Academy emerged as the beating heart of a new era — a visionary institution designed to sculpt the finest minds of humanity. Powered by the sovereign brilliance of the IDAI Universe, it became the crucible where intellect met purpose. With a staggering competition ratio of 750 candidates for a single seat, the Academy stood as a symbol of excellence, precision, and destiny. Each chosen candidate represented not just talent, but the courage to redefine the boundaries of innovation and global leadership. <br><br>
+
+    Over the decades, the Academy’s influence transcended borders, becoming the intellectual backbone of the IDAI Universe’s expansion. It nurtured thinkers, scientists, and creators who carried the torch of progress into every sector — from technology to philanthropy. The foundation of 2002 was not merely the birth of an institution; it was the ignition of a cosmic legacy, ensuring that the brightest minds would forever guide humanity toward harmony, justice, and interstellar advancement.
+  </p>
+</div>
+
+<div class="section">
+  <h2>Powered By: IDAI Education Ministry & Business Sector</h2>
+  <h3>The Backbone of Brilliance</h3>
+  <center>
+    <img src="IDAI Education Ministry.jpg">
+  </center>
+  <p>
+    The IDAI Cosmic Vanguard Academy stands tall because it is powered by two pillars of strength — the Education Ministry and the Business Sector of the IDAI Universe. Together, they form the lifeblood of this institution, channeling resources, vision, and innovation into every corner of the Academy. The Education Ministry ensures that the curriculum is not only rigorous but also aligned with the cosmic covenant of justice and progress, while the Business Sector provides the infrastructure, technology, and financial backbone to sustain excellence. This dual power guarantees that every candidate is nurtured in an environment where knowledge meets enterprise, and intellect meets opportunity. <br><br>
+    
+    To be powered by these two sectors is to be part of a legacy that fuses wisdom with innovation. It symbolizes the Academy’s commitment to shaping leaders who are not only brilliant thinkers but also responsible guardians of humanity’s future. This synergy between education and business ensures that graduates of the IDAI Cosmic Vanguard Academy are equipped to carry forward the global legacy — blending technical brilliance with visionary impact, and securing a destiny that transcends generations.
+  </p>
+</div>
+
+<div class="section">
+  <h2>Competition Level (750:1)</h2>
+  <h3>Only the Finest Minds Prevail</h3>
+  <center>
+    <img src="competition.jpg">
+  </center>
+  <p>
+    The IDAI Cosmic Vanguard Academy is renowned for its unparalleled competition ratio — 750 candidates battling for a single seat. This staggering level of selectivity ensures that only the most brilliant, resilient, and visionary individuals are chosen to carry forward the Academy’s legacy. Each applicant represents a spark of potential, but only those who demonstrate extraordinary intellect, discipline, and creativity rise to the top. The competition is not merely academic; it is a test of character, endurance, and destiny. <br><br>
+    
+    To succeed in this crucible is to prove oneself worthy of shaping humanity’s future. The 750:1 ratio symbolizes the Academy’s commitment to excellence, ensuring that every graduate embodies the rarest blend of intelligence and integrity. It is more than a number — it is a testament to the Academy’s mission of selecting the finest minds to guide the IDAI Universe into a new age of interstellar progress and global harmony.
+  </p>
+</div>
+
+<div class="section">
+  <h2>Significance of the Academy</h2>
+  <h3>Forging the Global Legacy</h3>
+  <center>
+    <img src="significance.jpg">
+  </center>
+  <p>
+    The IDAI Cosmic Vanguard Academy is more than an institution — it is the living heartbeat of the IDAI Universe. Its significance lies in its mission to gather the most intelligent minds from across the globe, forging them into leaders who will carry humanity’s legacy forward. Every candidate who earns a seat here represents not just personal triumph, but the collective hope of nations. The Academy’s existence ensures that the brightest sparks of intellect are refined into flames of progress, guiding civilization toward justice, innovation, and interstellar harmony. <br><br>
+    
+    This significance extends beyond education; it is symbolic of humanity’s eternal pursuit of excellence. By selecting only the finest, the Academy safeguards the integrity of the IDAI Universe’s vision. Its graduates become architects of tomorrow — shaping industries, cultures, and ideologies that will define the next millennium. The Academy is not simply a school; it is the forge of destiny, ensuring that the global legacy of intelligence, morality, and innovation continues to shine brighter with every generation.
+  </p>
+</div>
+
+	<center><br><br>
+		<h6>Powered By</h6>
+		<a href="https://rayaantasnim.github.io/username.github.io-IDAI-company-/"><img src="Main Logo.jpg"></a>
+	</center>
+
+<footer>
+	<p>© IDAI: Inspiring Trust Through Innovation. All rights reserved.</p>
+</footer>
+
+<!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
