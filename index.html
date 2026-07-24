@@ -212,6 +212,69 @@
   }
 }
 
+.idai-intro {
+  text-align: center;
+  margin: 30px auto;
+  padding: 25px;
+  margin-top: 0px !important;
+  width: 85%;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.3);
+  animation: glowPulse 6s infinite alternate;
+}
+
+.idai-logo img {
+  width: 40%;
+  border-radius: 10px;
+  border: 3px solid #FFD700;
+  box-shadow: 0 0 20px rgba(255,140,0,0.6);
+  transition: transform 1s ease;
+  animation: logoFade 8s infinite alternate;
+}
+
+.idai-heading {
+  font-size: 28px;
+  margin: 20px 0;
+  font-weight: bold;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+  animation: colorShift 5s infinite alternate;
+}
+
+.idai-details {
+  font-size: 16px;
+  line-height: 1.8;
+  padding: 15px;
+  border-radius: 10px;
+  border: 2px solid #FFD700;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  animation: bgShift 7s infinite alternate;
+}
+
+/* Cinematic Animations */
+@keyframes glowPulse {
+  0% { box-shadow: 0 0 20px #FF4500; }
+  50% { box-shadow: 0 0 40px #FFD700; }
+  100% { box-shadow: 0 0 25px #00FFFF; }
+}
+
+@keyframes logoFade {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.05); opacity: 0.9; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes colorShift {
+  0% { color: #FF4500; }
+  50% { color: #FFD700; }
+  100% { color: #00CED1; }
+}
+
+@keyframes bgShift {
+  0% { background: #fff8dc; color: #333; }
+  50% { background: #ffe4b5; color: #111; }
+  100% { background: #e0ffff; color: #000; }
+}
+
   </style>	
 </head>
 
@@ -235,11 +298,26 @@
     </div>
   </nav><br><br>
 
+<!-- Header -->
+<div class="idai-intro">
+  <div class="idai-logo">
+    <img src="Intro.jpg" alt="IGC Logo">
+  </div>
+  <h2 class="idai-heading">IDAI Cosmic Vanguard Academy</h2>
+  <div class="idai-details">
+    <strong>
+      Headquarters: Nova Prime City, IDAI Universe<br>
+      Motto: Preparing the Best Citizen<br>
+      Admission Procedure: Competitive Admission test<br>
+    </strong>
+  </div>
+</div>
+
 <div class="section">
   <h2>IDAI Cosmic Vanguard Academy</h2>
   <h3>Where Intelligence Meets Destiny</h3>
   <center>
-    <img src="Intro.jpg">
+    <img src="IDAI Cosmic Vanguard Academy.jpg">
   </center>
   <p>
     In the early light of a new millennium, the IDAI Cosmic Vanguard Academy rose as the intellectual citadel of the IDAI Universe — a place where brilliance was not just measured, but sculpted. Founded in 2002, it became the epicenter of global innovation, uniting science, technology, and human spirit under one cosmic banner. Every candidate who stepped through its gates carried the weight of 750 competitors, each striving for a single seat — a testament to the Academy’s unmatched prestige. Powered by the IDAI Universe’s vision, it stood as a beacon for those who dared to dream beyond the stars, blending intellect with purpose and courage with creation. <br><br>
